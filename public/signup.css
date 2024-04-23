@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid {
+  margin-top: 8rem;
+  height: 50rem;
+  border-bottom: groove 0.25rem black;
+  text-align: center;
+  align-items: center;
+}
+.head{
+  height: 5rem;
+  color: #081b31;
+  background-color:#fff; 
+  align-items: center;
+  display: flex;
+  gap: 26rem;
+  padding-right: 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  border-bottom: double 0.35rem black;
+}
+.bottom{
+  background-color:#081b31;
+  height: 7rem;
+}
+.buttons{
+  display: flex;
+  gap: 5rem;
+  color: #081b31;
+  padding: 2rem;
+}
+.logo{
+  width: 100px;
+  height: auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  color: #081b31;
+  gap: 0;
+}
+.b1:hover{
+  border: 0.1rem solid #081b31;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px gray;
+  background: linear-gradient(to right, #e7adf1, #ce6df7);
+}
+#logot{
+  margin-top: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.input,#country{
+  background-color: #fff;
+  color: #081b31;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: 1.5px solid rgb(2, 46, 6);
+  box-shadow: 0 2px 4px rgba(2, 71, 6, 0.8);
+}
+::placeholder{
+  color: #081b31;
+  font-size: large;
+  text-align: center;
+}
+input[type=submit]{
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  background-color: lightblue;
+}
+.google{
+  width: 220px;
+  padding: 0.6rem;
+  border: 2px solid rgb(165, 7, 7);
+  background: #dd4b39;  
+  color: white; 
+  display: inline;
+  border-radius: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#main{
+  height: 450px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 1rem;
+  border:2px solid #081b31;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  background-image: url('images/sig.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+#sign{
+  border-bottom: 3px double #081b31;
+  padding: 6px;
+  display: inline;
+  font-style: italic;
+}

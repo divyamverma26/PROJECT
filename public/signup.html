@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="head">
+    <div class="logo">
+        <img src="images/Screenshot (210).png" width="80%" height="80%">
+        <h3 id="logot">
+        Mindful 
+        Momentum</h3>
+    </div>
+    <div class="buttons" onclick="home()">
+        <div class="b1">
+            <h2 id="home"><a href="home.html">Home</a></h2>
+        </div>
+        <div class="b1">
+            <h2 id="articles"><a href="articles.html">Articles</a></h2>
+        </div>
+        <div class="b1">
+            <h2 id="books"><a href="book.html">Books</a></h2>
+        </div>
+        <div class="b1" >
+          <h2 id="Quotes"><a href="quotes.html">Quotes</a></h2>
+        </div>
+    </div>
+  </div>
+  <div class="mid">
+    <h1 style="color: #450342;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-bottom: 2rem;">"Beginning is the first
+                   step towards success.."</h1>
+      <div id="main">
+        <h2 id="sign">Welcome</h2>
+        <div class="form">
+            <form method="POST" action="/apply">
+              <p style="margin-bottom: 1.8rem;">Already have an account? <a href="login.html">Login</a> here</p>
+                <select id="country" name="country">
+                  <option value="" disabled selected>Select a country</option>
+                </select>
+                <input class="input" type="text" name="number" placeholder="Mobile*" required><br>
+                <input class="input" type="email" name="email" placeholder="enter your email" required><br>
+                <input class="input" type="password" name="pass" placeholder="create password" required><br>
+                <input class="input" type="text" name="user" placeholder="choose username" required><br>
+                <input type="submit" placeholder="Sign-in"><br> 
+              <p>By signing up, you agree to our Terms & Conditions and Privacy Policy</p>
+              </form>
+        </div>
+      </div>
+  </div>
+  <script>
+    const countries = ["United States", "China", "India", "Indonesia", "Pakistan", "Brazil", "Nigeria", "Bangladesh", "Russia", "Mexico", "Japan", "Ethiopia", "Philippines", "Egypt", "Vietnam", "DR Congo", "Turkey", "Iran", "Germany", "Thailand", "United Kingdom", "France", "Italy", "Tanzania", "South Africa", "Myanmar", "Kenya", "South Korea", "Colombia", "Spain", "Uganda", "Argentina", "Algeria", "Sudan", "Ukraine", "Iraq", "Afghanistan", "Poland", "Canada", "Morocco", "Saudi Arabia", "Uzbekistan", "Peru", "Angola", "Malaysia", "Mozambique", "Ghana", "Yemen", "Nepal"];
+
+    function populateCountries() {
+        const select = document.getElementById("country");
+        countries.forEach(country => {
+            const option = document.createElement("option");
+            option.text = country;
+            option.value = country;
+            select.appendChild(option);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", populateCountries);
+    const home=()=>{
+      window.open('home.html','_self');
+    }
+</script>
+</body>
+</html>
